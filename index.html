@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IB Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        h1, h2, h3, .heading-font {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-ticker {
+            animation: ticker 30s linear infinite;
+            display: flex;
+            width: max-content;
+        }
+        .ticker-container:hover .animate-ticker {
+            animation-play-state: paused;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#6dd5ed',
+                            dark: '#2193b0',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-cyan-600 via-sky-700 to-blue-900 min-h-screen text-white relative overflow-x-hidden selection:bg-white selection:text-blue-600">
+    
+    <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <svg class="absolute top-0 left-0 w-full h-full opacity-20" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0,0 C30,40 70,10 100,60 L100,0 Z" fill="rgba(255,255,255,0.1)" />
+            <path d="M0,100 C40,70 60,30 100,50 L100,100 Z" fill="rgba(255,255,255,0.05)" />
+        </svg>
+    </div>
+
+    <main class="relative z-10 min-h-screen flex flex-col items-center justify-center text-center overflow-x-hidden py-12">
+        
+        <div class="container mx-auto px-6 mb-8 flex flex-col items-center">
+            <div class="mb-10 p-2 rounded-full bg-white shadow-2xl animate-fade-in-down mx-auto inline-block">
+                <img src="assets/images/ibsolution_logo_transparent.png" alt="IB Solutions Logo" class="w-28 h-28 md:w-40 md:h-40 object-contain">
+            </div>
+
+            <h1 class="text-3xl md:text-6xl font-bold tracking-tight drop-shadow-lg heading-font flex flex-wrap justify-center items-baseline gap-2 md:gap-3">
+                <span>IB Solutions</span>
+                <span class="text-lg md:text-3xl font-light opacity-80">(M) Sdn. Bhd.</span>
+            </h1>
+        </div>
+
+        <div class="w-full mb-16 overflow-hidden relative group ticker-container">
+             <div class="absolute inset-0 bg-white/10 backdrop-blur-md border-y border-white/20"></div>
+             
+             <div class="py-4 relative flex overflow-hidden whitespace-nowrap">
+                 <div class="animate-ticker text-xl md:text-2xl font-bold tracking-[0.2em] uppercase text-white drop-shadow-md">
+                     <!-- First copy of content -->
+                     <div class="flex gap-12 px-6 items-center">
+                         <span>Coming Soon</span>
+                         <span class="text-white/40">•</span>
+                         <span>Under Construction</span>
+                         <span class="text-white/40">•</span>
+                         <span>Launching 2026</span>
+                         <span class="text-white/40">•</span>
+                         <span>Stay Tuned</span>
+                         <span class="text-white/40">•</span>
+                     </div>
+                     <div class="flex gap-12 px-6 items-center">
+                         <span>Coming Soon</span>
+                         <span class="text-white/40">•</span>
+                         <span>Under Construction</span>
+                         <span class="text-white/40">•</span>
+                         <span>Launching 2026</span>
+                         <span class="text-white/40">•</span>
+                         <span>Stay Tuned</span>
+                         <span class="text-white/40">•</span>
+                     </div>
+                 </div>
+             </div>
+             
+             <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-cyan-600 to-transparent pointer-events-none opacity-50"></div>
+             <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-blue-900 to-transparent pointer-events-none opacity-50"></div>
+        </div>
+
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-6 drop-shadow-lg text-white">Who We Are</h2>
+                <p class="text-xl leading-relaxed text-white drop-shadow-md font-medium max-w-3xl mx-auto">
+                    Built on years of real-world experience, <strong>IB Solutions</strong> (Integrated Biz Solutions) exists to bridge experience with meaningful learning. We believe effective training must be structured, practical, and relevant.
+                </p>
+            </div>
+
+            <div class="mt-auto w-full px-4">
+                <p class="mb-6 text-sm uppercase tracking-widest opacity-90 font-semibold drop-shadow-md">Connect With Us</p>
+                <div class="flex space-x-4 md:space-x-8 justify-center flex-wrap gap-y-4">
+                    <a href="https://www.instagram.com/ibsolutions_m" class="group relative block w-12 h-12 md:w-14 md:h-14 hover:-translate-y-1 transition duration-300">
+                        <div class="absolute inset-0 bg-white rounded-full opacity-20 group-hover:opacity-100 transition-opacity duration-300 shadow-lg"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-white group-hover:text-blue-600 transition-colors duration-300">
+                            <i class="fab fa-instagram text-2xl md:text-3xl drop-shadow-md"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61585177806609" class="group relative block w-12 h-12 md:w-14 md:h-14 hover:-translate-y-1 transition duration-300">
+                        <div class="absolute inset-0 bg-white rounded-full opacity-20 group-hover:opacity-100 transition-opacity duration-300 shadow-lg"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-white group-hover:text-blue-600 transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-2xl md:text-3xl drop-shadow-md"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.tiktok.com/@ib.solutions.m.sd?_r=1&_t=ZS-93kjQfaLD5p" class="group relative block w-12 h-12 md:w-14 md:h-14 hover:-translate-y-1 transition duration-300">
+                        <div class="absolute inset-0 bg-white rounded-full opacity-20 group-hover:opacity-100 transition-opacity duration-300 shadow-lg"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-white group-hover:text-blue-600 transition-colors duration-300">
+                            <i class="fab fa-tiktok text-2xl md:text-3xl drop-shadow-md"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/company/ib-solutions-m-sdn-bhd/" class="group relative block w-12 h-12 md:w-14 md:h-14 hover:-translate-y-1 transition duration-300">
+                        <div class="absolute inset-0 bg-white rounded-full opacity-20 group-hover:opacity-100 transition-opacity duration-300 shadow-lg"></div>
+                        <div class="absolute inset-0 flex items-center justify-center text-white group-hover:text-blue-600 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-2xl md:text-3xl drop-shadow-md"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <footer class="mt-16 text-xs opacity-70 font-medium drop-shadow">
+                &copy; 2026 IB Solutions (M) Sdn. Bhd. All rights reserved.
+            </footer>
+        </div>
+
+    </main>
+
+</body>
+</html>
