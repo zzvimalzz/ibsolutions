@@ -11,6 +11,10 @@
   let pageContent = document.getElementById('page-content');
   const contentTransitionMs = 260;
 
+  function notifyPageRendered() {
+    document.dispatchEvent(new CustomEvent('ibs:page-rendered'));
+  }
+
   function setHeaderShadow() {
     if (!header) {
       return;
@@ -179,6 +183,7 @@
     });
     closeNav();
     window.scrollTo({ top: 0, behavior: 'auto' });
+    notifyPageRendered();
 
     if (pushState) {
       history.pushState({}, '', url.href);
@@ -237,4 +242,5 @@
   setActiveNav(window.location.pathname);
   initFaders(document);
   updateNavIndicator();
+  notifyPageRendered();
 })();

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trainers — IB Solutions</title>
+  <meta name="description" content="Meet Kumar T. Balan, a senior IB Solutions trainer and consultant specialising in leadership, performance management, process improvement, and Train The Trainer programmes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/trainers.css">
+  <link rel="icon" href="assets/images/ibsolution_logo_white_bg.png" type="image/png">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/ibsolution_logo_transparent.png" alt="IB Solutions logo">
+        <div class="logo-text">IB Solutions<small>Training. Development. Performance.</small></div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="trainers.html" class="active">Trainers</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="btn btn--primary btn--sm nav-cta">Get in Touch</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="nav-overlay"></div>
+  <nav class="mobile-nav" id="mobile-navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="trainers.html" class="active">Trainers</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Get in Touch</a>
+  </nav>
+
+  <main id="page-content" data-trainers-page data-trainers-ready="false">
+
+  <div class="trainer-page-skeleton" aria-hidden="true">
+    <div class="container trainer-page-skeleton-inner">
+      <div class="trainer-skeleton-hero">
+        <span class="trainer-skeleton-block trainer-skeleton-chip"></span>
+        <span class="trainer-skeleton-block trainer-skeleton-line trainer-skeleton-line--hero"></span>
+        <span class="trainer-skeleton-block trainer-skeleton-line trainer-skeleton-line--wide"></span>
+        <div class="trainer-skeleton-chip-row">
+          <span class="trainer-skeleton-block trainer-skeleton-pill"></span>
+          <span class="trainer-skeleton-block trainer-skeleton-pill"></span>
+          <span class="trainer-skeleton-block trainer-skeleton-pill"></span>
+        </div>
+      </div>
+      <div class="trainer-skeleton-roster">
+        <span class="trainer-skeleton-block trainer-skeleton-card"></span>
+        <span class="trainer-skeleton-block trainer-skeleton-card"></span>
+        <span class="trainer-skeleton-block trainer-skeleton-card"></span>
+      </div>
+      <div class="trainer-skeleton-profile">
+        <span class="trainer-skeleton-block trainer-skeleton-panel"></span>
+        <span class="trainer-skeleton-block trainer-skeleton-panel trainer-skeleton-panel--tall"></span>
+      </div>
+    </div>
+  </div>
+
+  <section class="trainer-hero">
+    <div class="container trainer-hero-grid">
+      <div class="trainer-hero-copy fade-up">
+        <span class="section-label">Trainer Directory</span>
+        <h1>Professional trainers with practical business credibility.</h1>
+        <p class="trainer-hero-lead">IB Solutions works with practitioners who combine structured learning design with real operational, leadership, and performance experience to deliver programmes that are credible, practical, and results-focused.</p>
+        <div class="trainer-hero-points">
+          <span>Operations-grounded facilitation</span>
+          <span>Leadership and performance expertise</span>
+          <span>Practical, results-focused delivery</span>
+        </div>
+        <div class="trainer-hero-actions">
+          <a href="#trainer-profile" class="btn btn--white" data-scroll-profile aria-controls="trainer-profile">View Active Profile</a>
+          <a href="contact.html" class="btn btn--outline btn--hero-outline trainer-hero-outline">Discuss Your Training Needs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section trainer-directory-section">
+    <div class="container">
+      <div class="text-center mb-48 fade-up">
+        <span class="section-label">Choose A Profile</span>
+        <h2 class="section-title">Trainer Roster</h2>
+        <p class="section-subtitle section-subtitle--center">Meet the professionals behind our programmes and explore the experience, strengths, and industry exposure they bring to every engagement.</p>
+      </div>
+      <div class="trainer-directory-grid fade-up" id="trainer-directory" aria-busy="true"></div>
+    </div>
+  </section>
+
+  <section class="section section--alt trainer-profile-section" id="trainer-profile">
+    <div class="container">
+      <div class="trainer-profile-shell" id="trainer-profile-shell" aria-busy="true"></div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <h2>Build Your Next Programme Around Credible Experience</h2>
+    <p>Partner with IB Solutions to bring practical, leadership-focused training into your organisation.</p>
+    <a href="contact.html" class="btn btn--white">Speak With Us</a>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">IB Solutions<small>(M) Sdn Bhd</small></div>
+          <p>A Malaysian professional services company specialising in corporate training and capability development. Training. Development. Performance.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="trainers.html">Trainers</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html">Corporate Training</a>
+          <a href="services.html">Capability Development</a>
+          <a href="services.html">Consulting &amp; Advisory</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@ibsolutions.com.my" target="_blank" rel="noopener">info@ibsolutions.com.my</a>
+          <a href="tel:+60169646292">+6016-9646 292</a>
+          <div class="social-row">
+            <a href="https://www.instagram.com/ibsolutions_m" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61585177806609" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@ib.solutions.m.sd" target="_blank" rel="noopener" class="social-icon" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.linkedin.com/company/ib-solutions-m-sdn-bhd/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 IB Solutions (M) Sdn Bhd. All rights reserved.</span>
+        <span>Kuala Lumpur, Malaysia</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/trainers-data.js"></script>
+  <script src="assets/js/trainers.js"></script>
+</body>
+</html>
