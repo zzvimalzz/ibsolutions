@@ -7,12 +7,12 @@ window.IBSolutionsTrainerDirectory = [
     shortRole: 'Profile Consultant',
     image: 'assets/images/Trainer Pic_Kumar.jpeg',
     imageAlt: 'Portrait of Kumar T. Balan',
-    rosterSummary: '28+ years across banking, operations leadership, manufacturing training, and performance improvement.',
+    rosterSummary: '30+ years across banking, operations leadership, manufacturing training, and performance improvement.',
     heroSummary: 'Hands-on operations and leadership experience across banking, manufacturing, training management, and director-level execution roles.',
     highlightTitle: 'Leadership rooted in operations',
     highlightBody: 'Kumar combines practical operational depth with facilitation experience, making his programmes commercially grounded and immediately usable.',
     intro: [
-      'Kumaraguru T. Balan is an established consultant with more than 28 years of experience spanning operations, services, facility management, quality systems, and organisational capability development.',
+      'Kumaraguru T. Balan is an established consultant with more than 30 years of experience spanning operations, services, facility management, quality systems, and organisational capability development.',
       'He has served as Director of Operations, Senior Operations Manager, Bank Manager, Production Manager, and Technical Training Manager, building credibility in operations management, KPI design, project management, leadership assessment, mentoring, risk management, and competency profiling.'
     ],
     credentials: [
@@ -20,7 +20,8 @@ window.IBSolutionsTrainerDirectory = [
       'ISO 9001 Lead Assessor/Auditor', 'Level III Training and Assessment, AIM Australia'
     ],
     stats: [
-      { value: '28+', label: 'Years of cross-industry consulting and training experience' },
+      {value: '1st', label: 'Trainer to conduct Train the Trainer in Malaysia'},
+      { value: '30+', label: 'Years of cross-industry consulting and training experience' },
       { value: '120+', label: 'HRD Corp Train The Trainer sessions delivered' },
       { value: '25%', label: 'Production and shipment uplift achieved in a PT Sinar Mas engagement' }
     ],
