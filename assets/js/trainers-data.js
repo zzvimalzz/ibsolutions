@@ -43,7 +43,7 @@ window.IBSolutionsTrainerDirectory = [
     ],
     timeline: [
       { period: '2026 to Present', body: 'Senior Consultant and Trainer at IB Solutions, providing consulting and training services in operations, leadership, and performance management.' },
-      { period: '2016 to 2025', body: 'Founder and Principal Counsultant of Procentric, providing consulting and training services in operations, leadership, and performance management.' },
+      { period: '2016 to 2025', body: 'Founder and Principal Counsultant of Procentric Global Sdn Bhd, providing consulting and training services in operations, leadership, and performance management.' },
       { period: '2003 to 2016', body: 'Senior Operations Manager and later Director of Operations, leading execution, performance, and workforce development programmes.' },
       { period: '1994 to 2002', body: 'Production Assistant Manager, Manufacturing Training Manager, and Technical Training Manager across Prosonic and Propel Johnson Controls.' },
       { period: '1993 to 1994', body: 'Consultant at Personal Development Leadership Sdn Bhd, focusing on leadership and organisational development.' },
